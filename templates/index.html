@@ -1,0 +1,819 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Brothers Education</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets1/favicon-32x32.png' %}" rel="icon">
+  <link href="../static/assets1/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/assets1/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/assets1/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/assets1/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/assets1/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/assets1/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/assets1/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../static/assets1/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/assets1/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v4.11.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+<style>
+.mema{
+  color: white;
+  font-size: 15px;
+  padding-left: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+      <div class="container-fluid">
+          <img src="{% static 'pngwing.com.png' %}" rel="stylesheet" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          <a href="#" class="mema">Brothers Education</a>
+      </div>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Bosh menu</a></li>
+          <li><a class="nav-link scrollto" href="#about">Biz Haqimizda</a></li>
+          <li><a class="nav-link scrollto" href="#services">Xizmatlar</a></li>
+          <li><a class="nav-link   scrollto" href="#portfolio">Rasmlar</a></li>
+          <li><a class="nav-link scrollto" href="#team">Ustozlar</a></li>
+          <li class="dropdown"><a href="#"><span>Qo`shimcha</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{% url 'mianexammet' %}">Natijalar</a></li>
+              <li class="dropdown"><a href="#"><span>Yana</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="{% url 'index' %}">Admin</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Aloqa</a></li>
+          <li><a class="getstarted scrollto" href="#about">Ro`yxatdan O`tish</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+          data-aos="fade-up" data-aos-delay="200">
+          <h1>Talim uchun eng yaxshi yo`l</h1>
+          <h2>Bizning kurslarimiz eng yaxshi va uni hech qayerdan topa olmaysiz !</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started scrollto">Ro`yxatdan O`tish</a>
+            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span></span></a> -->
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="../static/assets1/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="../static/assets1/img/clients/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="../static/assets1/img/clients/client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="../static/assets1/img/clients/client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="../static/assets1/img/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="../static/assets1/img/clients/client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="../static/assets1/img/clients/client-6.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Cliens Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Biz Haqimizda</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Biz eng yaxshi mentorlarga ega bo`lgan "BROTHERS EDUCATION" o`quv markazimiz
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Juda ham sifatli ta`lim</li>
+              <li><i class="ri-check-double-line"></i> Har oy oylik imtihonlar </li>
+              <li><i class="ri-check-double-line"></i> Ustozlar bepul maslahatlari</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              O`qish yaxshi biz bilan o`qish undan ham yaxshi
+            </p>
+            <a href="#" class="btn-learn-more">Ro`yxatdan O`ting</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3> <strong>Nega aynan biz ?</strong></h3>
+              <p>
+                Nega o`quvchilar bizni tanlashadi !
+
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Biz
+                    har doim sifatli ta`lim beramiz <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      Har qanday holatda ham sizni fanga qiziqtirib qo`yamiz
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Nega
+                    o`quvchilar darslarga qiziqadi ? <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Darslar quvnoq ruhda bo`ladi va hammani qo`llab quvatlab turamiz !
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span>
+                    Qancha talabalaringiz bor ? <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Bizning talabalar juda ko`p va ular hozirda o`zlarini ta`limga bag`ishlashgan !
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+            style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="../static/assets1/img/skills.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>Eng ko`p o`qitaladigan Fanlar</h3>
+            <p class="fst-italic">
+
+            </p>
+
+            <div class="skills-content">
+
+              <div class="progress">
+                <span class="skill">IELTS <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill"> MATEMATIKA <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill"> Bolalar Ingliz tilisi <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Kimyo va Biologiya <i class="val">55%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2> Xizmatlar</h2>
+          <p>Eng yaxshi Xizmatlar</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">O`yinlar</a></h4>
+              <p>Farzandingiz biz orqali turli xil O`yinlar bilan darslarga ko`proq qiziqadi !</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+            data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Hujjatlar</a></h4>
+              <p> Har qanday varoqlarni O`quv markaz ma`muriyati sizga taqdim etadi va bunga qo`shimcha pul so`ralmaydi
+                !</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+            data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Tez o`qitish</a></h4>
+              <p>O`qishga kirishingiz uchun tez o`qitish tizimi !</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+            data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4><a href="">Sertifikatlar</a></h4>
+              <p>Farzandingiz biz orqali turli xil sertifikatlar oladi!</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Biz bilan Yuksalish sari </h3>
+            <p> Biz orqali kelajakda bir kasb egasi bo`lishingizni taminlang</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Ro`yxatdan O`ting</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Rasmlar</h2>
+          <p>Bizning kurlarimiz davomida o`quvchilar rasmlari >>></p>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">Rasmlar</li>
+          <li data-filter=".filter-card">Ajoyiblari</li>
+          <li data-filter=".filter-web">Best</li>
+        </ul>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="../static/assets1/img/portfolio/portfolio-1.jpg" class="img-fluid"
+                alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="../static/assets1/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="../static/assets1/img/portfolio/portfolio-2.jpg" class="img-fluid"
+                alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="../static/assets1/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="../static/assets1/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="../static/assets1/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="../static/assets1/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="../static/assets1/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="../static/assets1/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="../static/assets1/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="../static/assets1/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="../static/assets1/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="../static/assets1/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="../static/assets1//img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="../static/assets1/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="../static/assets1/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="../static/assets1/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="../static/assets1/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Ustozlar</h2>
+          <p>Bzining mentorlarimiz</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="../static/assets1/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Mansurjon Ortikov</h4>
+                <span>Ingliz tili o`qtuvchisi</span>
+                <p>Tajribali mentor Hamda BROTHERS EDUCATION ASOSCHISI </p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="../static/assets1/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Abdukarimov Sanjar </h4>
+                <span>Bilologiya va Kimyo</span>
+                <p>abiturientlarga biologiya va kimyodan dars beradigan ustoz</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="../static/assets1/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Eshmurodov Dilxush</h4>
+                <span>Matematika</span>
+                <p>YOSH BOLALARGA MATEMATIKADAN DARS BERADI!!!</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="../static/assets1/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>ILASHOV MEHROBJON</h4>
+                <span>Matematika Va Fizika</span>
+                <p>ABITURIENTLARGA MATEMATIKA VA FIZIKADAN DARS BERADIGAN USTOZ</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Narxlar</h2>
+          <p> Bizdagi Narxlar Chuntakbop va qulay ! Va yana agar boshqa kurslar haqida ma`lumot olishni istasangiz Bizni
+            telegram botimizga tashrif buyuring ! Telegram bot >>> <a href="http://t.me/Edubrotherbot"> Telegram</a>
+          </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>PRE IELTS </h3>
+              <h4><sup>$</sup>25<span>Oyiga</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Bu Ielts boshlovchilar uchun</li>
+                <li><i class="bx bx-check"></i> Intelectual darslar</li>
+                <li><i class="bx bx-check"></i> oylik imtixonlar</li>
+                <li class="na"><i class="bx bx-x"></i> <span>Dars qoldirilishi</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span> yosh bolalar </span></li>
+              </ul>
+              <a href="#" class="buy-btn">Ro`yxatdan o`tish</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>FULL IELTS</h3>
+              <h4><sup>$</sup>27<span>oyiga</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> O`z ustida ishlash</li>
+                <li><i class="bx bx-check"></i> Xoxlagan payti savol so`rash</li>
+                <li><i class="bx bx-check"></i> Xoxlagan payti o`quv markazga kelib tushunmagan mavzularni takrorlash
+                </li>
+                <li><i class="bx bx-check"></i> Sertifikat</li>
+                <li><i class="bx bx-check"></i> Oylik Imtihonlar</li>
+              </ul>
+              <a href="#" class="buy-btn">Ro`yxatdan o`tish</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>MATEMATIKA</h3>
+              <h4><sup>$</sup>15<span>oyiga</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Haftada 3 kun</li>
+                <li><i class="bx bx-check"></i> Abiturentlar uchun</li>
+                <li><i class="bx bx-check"></i> Sertifikatlar</li>
+                <li><i class="bx bx-check"></i> Haftalik testlar</li>
+                <li><i class="bx bx-check"></i> Oylik Imtihonlar</li>
+              </ul>
+              <a href="#" class="buy-btn">Ro`yxatdan O`tish</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Ko`p So`raladigan Savollar</h2>
+          <p>Foydalanuvchilar tomonidan ko`p so`raladigan savollar</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
+                data-bs-target="#faq-list-1">Kursingizga qanday yozilsam bo`ladi ? <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Buning uchun Ro`yxatdan o`tish kinopkasini bosing va kerakli joylarni to`ldiring !
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2"
+                class="collapsed"> Kursingizda nega sertifikat beriladi ? <i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Chunki biz sertifikatlar orqali qanday o`qishingizni baholab turamiz
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3"
+                class="collapsed">Kurs narxlarini qanday arzonlashtirsam bo`ladi ? <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Buning iloji yo`q lekin siz har oy testlarga zo`r qatnashsangiz sizga 50% gacha chegirma taqdim
+                  etiladi !
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4"
+                class="collapsed"> Chegirmalarni qanday to`layman ? <i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Masalan agar siz 150000 so`mlik kursda o`qisangiz 50%li chegirma bilan 75000 to`laysiz
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5"
+                class="collapsed"> Hamma fanlar bormi ? <i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yo`q lekin hozirda 5ta fan mavjud
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <!-- <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Bizga Qo`shiling</h4>
+            <p>emailingiz</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Brothers Education</h3>
+            <p>
+              ✅Manzilimiz : Manzil:Pastdarg'om Tumani,Beshbola M.F.Y, sherdor 19 <br><br>
+              <strong>Telefon:</strong> +998 55 705 60 05<br>
+              <strong>Email:</strong> brothereducation@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Foydali linklar</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Bizning kurslar</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">IELTS</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Pre IELTS</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Matematika</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Kimyo va Biologiya</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fizika</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Ijtimoiy Tarmoqlar</h4>
+            <p>Kirib Ko`ring</p>
+            <div class="social-links mt-3">
+              <a href="https://t.me/Edubrotherbot" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://t.me/Edubrotherbot" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://t.me/Edubrotherbot" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://t.me/Edubrotherbot" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="https://t.me/Edubrotherbot" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; <strong><span>Brothers Education</span></strong> Barcha huquqlar himoyalangan
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Designed by <a href="#">Nurbek Abdurashitov</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../static/assets1/vendor/aos/aos.js"></script>
+  <script src="../static/assets1/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/assets1/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/assets1/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/assets1/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../static/assets1/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../static/assets1/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../static/assets1/js/main.js"></script>
+
+</body>
+
+</html>
