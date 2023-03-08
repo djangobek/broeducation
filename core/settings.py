@@ -54,13 +54,17 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "core.wsgi.application"
 
-import os, dj_database_url
+
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    "default": dj_database_url.parse('postgres://blogdb_asvv_user:HJyinTp8PlJvWhQJkplmDo2shMcwE7en@dpg-cg470qqk728m6o4mp38g-a.oregon-postgres.render.com/blogdb_asvv')
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -99,8 +103,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 STATIC_URL = "static/"
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
-STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles") 
+STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles')) 
 
 
 # Default primary key field type
