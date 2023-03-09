@@ -31,3 +31,9 @@ class Post(models.Model):
         ordering = ['-umumiy_bali']
     def __str__(self):
         return str(self.umumiy_bali) + '/' + self.ism_familya
+class MyfutureForm(models.Model):
+    full_name = models.CharField(max_length=400)
+    phone_number = models.CharField(max_length=30)
+    description = models.CharField(max_length=800)
+    def __str__(self):
+        return self.full_name

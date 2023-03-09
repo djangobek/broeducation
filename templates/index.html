@@ -48,6 +48,15 @@
 </head>
 
 <body>
+  <div class="messages-block">
+    {% if messagees %}
+      {%for msg in messages%}
+      <div class="alert alert-{{msg.tags}}" role="alert">
+          {{msg}}
+      </div>
+      {%endfor%}
+    {% endif %}
+  </div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
@@ -78,13 +87,13 @@
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
               </li>
-              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="{% url 'registration' %}">Ro`yxatdan o`tish</a></li>
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Aloqa</a></li>
-          <li><a class="getstarted scrollto" href="#about">Ro`yxatdan O`tish</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'registration' %}">Aloqa</a></li>
+          <li><a class="getstarted scrollto" href="{% url 'registration' %}">Ro`yxatdan O`tish</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -102,7 +111,7 @@
           <h1>Talim uchun eng yaxshi yo`l</h1>
           <h2>Bizning kurslarimiz eng yaxshi va uni hech qayerdan topa olmaysiz !</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Ro`yxatdan O`tish</a>
+            <a href="{% url 'registration' %}" class="btn-get-started scrollto">Ro`yxatdan O`tish</a>
             <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span></span></a> -->
           </div>
         </div>
@@ -392,7 +401,7 @@
               <p>App</p>
               <a href="../static/assets1/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{% url 'registration' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -415,7 +424,7 @@
               <p>App</p>
               <a href="../static/assets1/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{% url 'registration' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -426,7 +435,7 @@
               <p>Card</p>
               <a href="../static/assets1/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{% url 'registration' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -437,7 +446,7 @@
               <p>Web</p>
               <a href="../static/assets1/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{% url 'registration' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -448,7 +457,7 @@
               <p>App</p>
               <a href="../static/assets1/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{% url 'registration' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -459,7 +468,7 @@
               <p>Card</p>
               <a href="../static/assets1//img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{% url 'registration' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -470,7 +479,7 @@
               <p>Card</p>
               <a href="../static/assets1/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{% url 'registration' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -481,7 +490,7 @@
               <p>Web</p>
               <a href="../static/assets1/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{% url 'registration' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -598,7 +607,7 @@
                 <li class="na"><i class="bx bx-x"></i> <span>Dars qoldirilishi</span></li>
                 <li class="na"><i class="bx bx-x"></i> <span> yosh bolalar </span></li>
               </ul>
-              <a href="#" class="buy-btn">Ro`yxatdan o`tish</a>
+              <a href="{% url 'registration' %}" class="buy-btn">Ro`yxatdan o`tish</a>
             </div>
           </div>
 
@@ -614,7 +623,7 @@
                 <li><i class="bx bx-check"></i> Sertifikat</li>
                 <li><i class="bx bx-check"></i> Oylik Imtihonlar</li>
               </ul>
-              <a href="#" class="buy-btn">Ro`yxatdan o`tish</a>
+              <a href="{% url 'registration' %}" class="buy-btn">Ro`yxatdan o`tish</a>
             </div>
           </div>
 
@@ -629,7 +638,7 @@
                 <li><i class="bx bx-check"></i> Haftalik testlar</li>
                 <li><i class="bx bx-check"></i> Oylik Imtihonlar</li>
               </ul>
-              <a href="#" class="buy-btn">Ro`yxatdan O`tish</a>
+              <a href="{% url 'registration' %}" class="buy-btn">Ro`yxatdan O`tish</a>
             </div>
           </div>
 
@@ -752,8 +761,8 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'registration' %}">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'registration' %}">Privacy policy</a></li>
             </ul>
           </div>
 
@@ -817,3 +826,10 @@
 </body>
 
 </html>
+<!-- <form action="" method=POST>
+  <div class="mb-3">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <input type="submit" value="submit" class="btn btn-secondary">
+  </div>
+</form> -->
