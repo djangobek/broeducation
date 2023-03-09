@@ -1,8 +1,8 @@
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-za6smg=w*ks0f*7xc&*x!l)_+^am=-!lytf65bt*z(*8wpr03w"
-DEBUG = True
-ALLOWED_HOSTS = ['*']
+DEBUG = False
+ALLOWED_HOSTS = ['pythonanywhere.com']
 
 INSTALLED_APPS = [
     'jazzmin',
